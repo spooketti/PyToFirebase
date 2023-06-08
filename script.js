@@ -1,3 +1,4 @@
+
 const firebaseConfig = {
   apiKey: "AIzaSyBsj_t8Q_z0LbJuYU0uUPfQW8nW1w6wptw",
   authDomain: "pytojs-dc469.firebaseapp.com",
@@ -9,11 +10,20 @@ const firebaseConfig = {
   measurementId: "G-NZGT5D4C4K"
 };
 
-firebase.initializeApp(firebaseConfig);
-  const db = firebase.database();
-  const servers = db.ref("Books/")
-  servers.on("child_added", function(snapshot)
+  firebase.initializeApp(firebaseConfig);
+
+const db = firebase.database();
+const servers = db.ref("Books/")
+
+
+
+
+servers.on("child_added", function(snapshot)
 {
-   alert("what")
+    console.log("PLEASE")
 })
+
+
+
+//T
 
